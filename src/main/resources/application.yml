@@ -1,0 +1,22 @@
+server:
+  port : 9001
+spring:
+  application:
+    name: schoolSecurity
+  datasource:
+    url: jdbc:postgresql://localhost:5432/school-management
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+jwt:
+  token:
+    secret-key: 34743777217A24432646294A404E635266556A586E3272357538782F413F442A
+
+
